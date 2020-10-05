@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Linq;
 
 namespace Open_Lab_03._10
 {
@@ -6,7 +6,8 @@ namespace Open_Lab_03._10
     {
         public int GetNumberOfCharsInString(char letter, string str)
         {
-            throw new NotImplementedException();
+            int count = str.ToArray().Count(c => c == letter);
+            return count;
         }
     }
 }
